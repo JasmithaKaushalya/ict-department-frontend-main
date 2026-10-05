@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import StaffHero from "../../components/pages/public/acedamicStaff/StaffHero";
-import HodFeatured from "../../components/pages/public/acedamicStaff/HodFeatured";
-import StaffGrid from "../../components/pages/public/acedamicStaff/StaffGrid";
-import ResearchAreas from "../../components/pages/public/acedamicStaff/ResearchAreas";
+import StaffHero from "../../components/pages/public/acedamicstaff/StaffHero";
+import HodFeatured from "../../components/pages/public/acedamicstaff/HodFeatured";
+import StaffGrid from "../../components/pages/public/acedamicstaff/StaffGrid";
+import ResearchAreas from "../../components/pages/public/acedamicstaff/ResearchAreas";
 import CTASection from "../../components/pages/public/home/CTASection";
 import PublicLayout from "../../layouts/PublicLayout";
 import { getAllAcademicStaff } from "../../api/academicStaffApi";
