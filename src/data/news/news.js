@@ -2,6 +2,8 @@ import news1 from "../../assets/images/news/news1.jpg";
 import news2 from "../../assets/images/news/news2.jpg";
 import news3 from "../../assets/images/news/news3.jpg";
 import news4 from "../../assets/images/news/news4.jpg";
+import news5 from "../../assets/images/news/news5.jpg";
+
 const news = [
   {
     id: 1,
@@ -46,12 +48,12 @@ const news = [
   {
     id: 5,
     featured: false,
-    title: "Saruwath Dansala Organized by ICT Students",
-    category: "Student Activity",
+    title: "The First Annual General Meeting (AGM) of i Club",
+    category: "Announcement",
     date: "2026-10-10",
-    image: news3,
+    image: news5,
     description:
-      "Students of the Department organized a Saruwath Dansala as part of a community outreach initiative, bringing together staff and students for a shared cause.",
+      "A new chapter begins. Here’s to innovation, leadership, and collaboration!",
   },
 ];
 export default news;
