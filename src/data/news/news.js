@@ -5,7 +5,7 @@ const news = [
     title: "Department Orientation Programme 2026",
     category: "Announcement",
     date: "2026-10-19",
-    image: "../src/assets/images/news/news1.jpg",
+    image: "images/news/news1.jpg",
     description:
       "The Department welcomed the new intake of BICT students with an orientation programme introducing academic life, university facilities, and student support services.",
   },
