@@ -8,7 +8,7 @@ function ProfileAvatar({ student, onPictureUpdate }) {
   const [uploading, setUploading] = useState(false);
 
   const imageUrl = student.profilePicture 
-    ? `http://localhost:8081${student.profilePicture}` 
+    ? `${import.meta.env.VITE_API_BASE_URL}${student.profilePicture}` 
     : "/images/staff/default.jpg";
 
   const handleFileChange = async (e) => {

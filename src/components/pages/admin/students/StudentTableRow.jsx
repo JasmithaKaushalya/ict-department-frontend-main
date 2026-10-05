@@ -8,7 +8,7 @@ function StudentTableRow({ student, onView, onEdit, onDelete }) {
   const imageUrl = student.profilePicture
     ? student.profilePicture.startsWith("http")
       ? student.profilePicture
-      : `http://localhost:8081${student.profilePicture}`
+      : `${import.meta.env.VITE_API_BASE_URL}${student.profilePicture}`
     : defaultAvatar;
 
   return (

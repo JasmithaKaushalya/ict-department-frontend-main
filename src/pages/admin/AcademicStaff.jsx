@@ -110,7 +110,7 @@ function AcademicStaff() {
               : "Permanent",
           qualifications: s.qualifications || [],
           research: s.researchInterests || [],
-          photo: s.picture ? `http://localhost:8081${s.picture}` : null,
+          photo: s.picture ? `${import.meta.env.VITE_API_BASE_URL}${s.picture}` : null,
         };
       });
 

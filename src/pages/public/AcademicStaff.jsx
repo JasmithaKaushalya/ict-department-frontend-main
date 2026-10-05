@@ -40,7 +40,7 @@ function AcademicStaff() {
             designation: TITLE_MAP[s.title] || s.title?.replace(/_/g, " "),
             qualifications: s.qualifications || [],
             research: s.researchInterests || [],
-            image: s.picture ? `http://localhost:8081${s.picture}` : defaultAvatar,
+            image: s.picture ? `${import.meta.env.VITE_API_BASE_URL}${s.picture}` : defaultAvatar,
             rawTitle: s.title,
             positions: s.positions || []
           };

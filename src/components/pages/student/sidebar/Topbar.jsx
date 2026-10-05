@@ -16,7 +16,7 @@ function Topbar({ onMenuClick }) {
   const imageUrl = user?.profilePicture
     ? user.profilePicture.startsWith("http")
       ? user.profilePicture
-      : `http://localhost:8081${user.profilePicture}`
+      : `${import.meta.env.VITE_API_BASE_URL}${user.profilePicture}`
     : "/images/staff/default.jpg";
 
   return (
