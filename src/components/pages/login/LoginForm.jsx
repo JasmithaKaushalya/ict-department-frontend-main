@@ -242,11 +242,6 @@ function LoginForm({ role, setRole }) {
             `Sign in as ${role === "student" ? "Student" : "Administrator"}`
           )}
         </Button>
-        <p className="mt-6 text-center text-sm text-gray-500">
-          <Link to="/" className="text-blue-700 font-medium hover:underline">
-            ← Back to Home
-          </Link>
-        </p>
       </form>
     </div>
   );

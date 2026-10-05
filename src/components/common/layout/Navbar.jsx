@@ -31,7 +31,7 @@ function Navbar() {
 
           {/* Logo */}
 
-          <Link to="/" className="flex items-center gap-4">
+          <div className="flex items-center gap-4">
 
             <img
               src={logo}
@@ -49,7 +49,7 @@ function Navbar() {
               </p>
             </div>
 
-          </Link>
+          </div>
 
           {/* Desktop Navigation */}
 
