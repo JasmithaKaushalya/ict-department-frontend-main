@@ -1,12 +1,13 @@
 import { UserCircle } from "lucide-react";
 import Card from "../../../common/ui/Card";
-import batches from "../../../../data/admin/intake/batches";
 
 function StudentPreviewCard({ student }) {
   const hasContent =
-    student.fullName || student.enrollmentNumber || student.email;
-  const batchLabel =
-    batches.find((b) => b.id === student.batch)?.name || student.batch;
+    student.fullName ||
+    student.nameWithInitials ||
+    student.enrollmentNumber ||
+    student.email ||
+    student.batchName;
 
   return (
     <Card>
@@ -29,6 +30,13 @@ function StudentPreviewCard({ student }) {
 
             <div>
               <p className="text-xs text-gray-400 uppercase tracking-wide">
+                Name with Initials
+              </p>
+              <p className="text-gray-700">{student.nameWithInitials || "—"}</p>
+            </div>
+
+            <div>
+              <p className="text-xs text-gray-400 uppercase tracking-wide">
                 Enrollment No
               </p>
               <p className="text-gray-700">{student.enrollmentNumber || "—"}</p>
@@ -38,7 +46,7 @@ function StudentPreviewCard({ student }) {
               <p className="text-xs text-gray-400 uppercase tracking-wide">
                 Batch
               </p>
-              <p className="text-gray-700">{batchLabel || "—"}</p>
+              <p className="text-gray-700">{student.batchName || "—"}</p>
             </div>
 
             <div>

@@ -1,5 +1,5 @@
 import { CheckCircle2, Mail } from "lucide-react";
-import Button from "../../../common/ui/Card";
+import Button from "../../../common/ui/Button";
 
 function Row({ label, value }) {
   return (
