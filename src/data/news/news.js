@@ -54,3 +54,4 @@ const news = [
       "Students of the Department organized a Saruwath Dansala as part of a community outreach initiative, bringing together staff and students for a shared cause.",
   },
 ];
+export default news;
