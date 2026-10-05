@@ -11,7 +11,7 @@ function StudentForm({ student, errors, onChange, batches = [], isEditing }) {
       <StudentFormInput
         label="Full Name"
         name="fullName"
-        placeholder="John David Smith"
+        placeholder="Heshan Akila Dharamadhasa"
         value={student.fullName || ""}
         onChange={handleChange}
         error={errors.fullName}
@@ -20,7 +20,7 @@ function StudentForm({ student, errors, onChange, batches = [], isEditing }) {
       <StudentFormInput
         label="Name with Initials"
         name="nameWithInitials"
-        placeholder="J.D. Smith"
+        placeholder="H.A.Dharamadhasa"
         value={student.nameWithInitials || ""}
         onChange={handleChange}
         error={errors.nameWithInitials}
@@ -29,7 +29,7 @@ function StudentForm({ student, errors, onChange, batches = [], isEditing }) {
       <StudentFormInput
         label="University Registration Number"
         name="enrollmentNumber"
-        placeholder="UWU/ICT/23/019"
+        placeholder="UWU/ICT/23/059"
         value={student.enrollmentNumber || ""}
         onChange={handleChange}
         error={errors.enrollmentNumber}
@@ -40,7 +40,7 @@ function StudentForm({ student, errors, onChange, batches = [], isEditing }) {
         label="Student Email"
         name="email"
         type="email"
-        placeholder="john@std.uwu.ac.lk"
+        placeholder="ict23059@std.uwu.ac.lk"
         value={student.email || ""}
         onChange={handleChange}
         error={errors.email}
